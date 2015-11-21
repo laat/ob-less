@@ -1,0 +1,25 @@
+* ob-less
+  Eperiment and document [[lesscss.org][less-css]] with org-mode
+
+** Dependencies
+    #+begin_src sh
+      npm install -g less-cli
+    #+end_src
+
+** Example
+    : #+begin_src less :wrap SRC css
+    :   @nice-blue: #5B83AD;
+    :   @light-blue: @nice-blue + #111;
+    : 
+    :   #header {
+    :     color: @light-blue;
+    :   }
+    : #+end_src
+
+    : #+RESULTS:
+    : #+BEGIN_SRC css
+    : #header {
+    :   color: #6c94be;
+    : }
+    : #+END_SRC
+
