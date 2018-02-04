@@ -18,7 +18,7 @@
 
 (defun org-babel-execute:less (body params)
   (let* ((cmdline (cdr (assoc :cmdline params)))
-         (cmd (concat "lessc " (or cmdline "") "-")))
+         (cmd (concat "lessc " cmdline " -")))
     (org-babel-eval cmd body)))
 
 (defun org-babel-prep-session:less (session params)
