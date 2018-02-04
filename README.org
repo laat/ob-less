@@ -1,5 +1,5 @@
 * ob-less
-  Document [[lesscss.org][less-css]] with org-mode
+  Document [[http://lesscss.org/][less-css]] with org-mode
 
 ** Dependencies
     #+begin_src sh
